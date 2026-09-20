@@ -15,6 +15,7 @@
     border: 1px solid $Dark;
     color: $Dark;
     display: flex;
+    padding: 0 10px;
     align-items: center;
     justify-content: center;
     font-style: normal;
@@ -23,4 +24,5 @@
     text-transform: uppercase;
     text-decoration: none;
     background-color: transparent;
+    cursor: pointer;
 }

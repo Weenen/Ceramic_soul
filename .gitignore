@@ -185,3 +185,5 @@ $RECYCLE.BIN/
 
 # Для Vite
 dist/
+
+.DS_Store
