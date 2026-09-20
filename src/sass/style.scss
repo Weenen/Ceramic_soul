@@ -1,0 +1,9 @@
+@use "/src/sass/libs/modern-normalize.min.css";
+@use "/src/sass/libs/fontello.css";
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/basic.scss";
+
+@use "/src/sass/block/header.scss";
+@use "/src/sass/block/promo.scss";
+@use "/src/sass/ui/title.scss";
+@use "/src/sass/ui/buttons.scss";

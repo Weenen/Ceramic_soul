@@ -1,0 +1,19 @@
+{
+  "name": "ceramic_soul",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Ivan",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "postcss-pxtorem": "^6.1.0",
+    "sass": "^1.104.1",
+    "vite": "^8.3.0"
+  }
+}
