@@ -1,5 +1,9 @@
 @use "/src/sass/base/variables.scss" as *;
 
+header {
+    position: relative;
+}
+
 .header {
     padding-top: 50px;
 
