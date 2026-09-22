@@ -95,6 +95,10 @@ header {
 }
 
 @media screen and (min-width: 1200px) {
+    header {
+        min-height: clamp(633px, 46.875vw, 900px);
+    }
+
     .header {
         &__img {
             display: block;
