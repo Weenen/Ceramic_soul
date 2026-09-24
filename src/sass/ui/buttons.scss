@@ -9,6 +9,22 @@
     transition: all 0.3s ease-out;
 }
 
+.btn-send {
+    @include button;
+    width: 220px;
+    height: 40px;
+
+    &:disabled {
+        color: $ui-disabled;
+        border: 1px solid $ui-disabled;
+    }
+}
+
+.btn-send:active {
+    border: 1px solid $Ceramic;
+    color: $Dark;
+}
+
 @media screen and (min-width: 1200px) {
     .btn-shop:hover {
         background: $Dark;
@@ -20,6 +36,11 @@
         box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.40) inset;
         color: $Dark;
         border: none;
+    }
+
+    .btn-send:hover {
+        color: $Ceramic;
+        border: 1px solid $Ceramic;
     }
 }
 

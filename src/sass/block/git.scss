@@ -1,0 +1,194 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.git {
+    padding-top: 60px;
+
+    .pure-u-xxl-2-5 {
+        display: none;
+    }
+
+    &__vaseimg {
+        display: none;
+    }
+
+    .pure-g {
+        margin-top: 60px;
+    }
+
+    fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+
+        input {
+            width: 100%;
+            padding: 10px 15px;
+            border-radius: 2px;
+            outline: 1px solid #E2E1E5;
+            border: none;
+            background: #FFF;
+            transition: all 0.2s ease-out;
+            color: $Dark;
+        }
+
+        input::placeholder {
+            color: $ui-disabled;
+        }
+
+        input:focus {
+            outline: 1px solid $Dark;
+        }
+    }
+
+    label {
+        display: block;
+        color: $Dark;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+
+        &:nth-child(2) {
+            margin-top: 8px;
+        }
+    }
+
+    textarea {
+        width: 100%;
+        height: 132px;
+        padding: 10px 15px;
+        border: none;
+        outline: 1px solid #E2E1E5;
+        resize: none;
+        transition: all 0.2s ease-out;
+    }
+
+    textarea::placeholder {
+        color: $ui-disabled;
+    }
+
+    textarea:focus {
+        outline: 1px solid $Dark;
+    }
+
+    &__label {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+
+        .git__checkbox {
+            height: 15px;
+            width: 15px;
+            vertical-align: middle;
+            margin-right: 15px;
+        }
+
+        a {
+            color: #A22DC6;
+            text-decoration: none;
+        }
+    }
+
+    .git__btn {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .git {
+        .pure-g {
+            margin-top: 45px;
+
+            .pure-u-xxl-3-5 {
+
+                label,
+                input#name,
+                input#email,
+                textarea {
+                    width: 300px;
+                }
+            }
+        }
+
+        &__form {
+            position: relative;
+        }
+
+        &__vaseimg {
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 85px;
+            height: auto;
+        }
+
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .git {
+        .pure-g {
+            position: static;
+            margin-top: 80px;
+            gap: 40px;
+            flex-wrap: nowrap;
+
+
+            .pure-u-1#wash {
+                width: 50%;
+                height: 340px;
+            }
+        }
+
+        .pure-u-xxl-2-5 {
+            display: block;
+        }
+
+        &__img {
+            display: block;
+            height: auto;
+            box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+        }
+
+        input:hover {
+            outline: 1px solid $Dark;
+        }
+
+        textarea:hover {
+            outline: 1px solid $Dark;
+        }
+
+        &__form {
+            position: relative;
+        }
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .git {
+        position: static;
+        padding-top: 100px;
+
+        .pure-g {
+            gap: 147px;
+            padding-right: 75px;
+
+            .pure-u-1#wash {
+                height: 356px;
+                position: relative;
+            }
+        }
+
+        &__img {
+            width: 100%;
+            height: 356px;
+        }
+
+        &__form fieldset {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 45px;
+        }
+    }
+}
