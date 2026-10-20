@@ -2,10 +2,181 @@
 
 .footer {
     background: $Dark;
-    padding: 80px 0 52px 0;
+    padding: 50px 0;
 
     &__wrapper {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        gap: 40px;
+
+        .newsletter {
+            &__title {
+                color: $Light;
+                font-family: Barlow;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+
+            &__form-label {
+                color: $Light;
+                font-family: Barlow;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: normal;
+                margin-top: 40px;
+                display: inline-block;
+            }
+
+            &__form-footeremail {
+                color: $ui-active;
+                font-family: Barlow;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: normal;
+                min-width: 293px;
+                outline: none;
+                display: block;
+                margin-top: 40px;
+                padding: 0 0 15px 0;
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid $ui-active;
+            }
+
+            &__form-footeremail::placeholder {
+                color: $ui-active;
+                font-family: Barlow;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            &__form-terms {
+                margin-top: 20px;
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                margin-bottom: 10px;
+                color: $Light;
+                font-family: Inter;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 28px;
+
+                a {
+                    color: #A22DC6;
+                    font-family: Inter;
+                    text-decoration: none;
+                }
+            }
+
+            &__form-checkbox {
+                margin-right: 10px;
+                margin-top: 1px;
+                display: block;
+                width: 15px;
+                height: 15px;
+                appearance: none;
+                border: 1px solid $Light;
+                border-radius: 2px;
+                outline: none;
+                cursor: pointer;
+            }
+
+            &__form-button {
+                margin-top: 20px;
+                width: 90px;
+                height: 40px;
+                border-radius: 2px;
+                border: 1px solid $Light;
+                background: transparent;
+                color: $Light;
+                font-family: Barlow;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+
+            &__form-button:disabled {
+                color: $ui-disabled;
+                border-color: $ui-disabled;
+            }
+        }
+
+        .links__wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 66px;
+            row-gap: 40px;
+
+            .item__title {
+                color: $Light;
+                font-family: Barlow;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+
+            .item__links {
+                display: flex;
+                gap: 20px;
+                margin-top: 40px;
+                flex-direction: column;
+            }
+
+            .item__link {
+                a {
+                    color: $Light;
+                    font-family: Barlow;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: normal;
+                    text-decoration: none;
+                    display: block;
+                }
+            }
+        }
+
+        .socials {
+            &__title {
+                color: $Light;
+                font-family: Barlow;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+
+            &__wrapper {
+                display: flex;
+                gap: 10px;
+                margin-top: 40px;
+
+                span {
+                    display: block;
+                    color: #FFF;
+                    font-size: 20px;
+                }
+
+                span::before {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        color: $Light;
+        width: max-content;
+        margin: 40px auto 0 auto;
+        font-family: Barlow;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
     }
 }
