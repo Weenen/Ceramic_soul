@@ -18,6 +18,19 @@
 	<header>
 		<div class="container">
 			<section class="header">
+				<div class="header__menu">
+					<div class="header__menu-close">
+						<span></span>
+						<span></span>
+					</div>
+					<nav class="header__menu-nav">
+						<ul>
+							<li><a href="#" class="header__menu-link">catalog</a></li>
+							<li><a href="#" class="header__menu-link">blog</a></li>
+							<li><a href="#" class="header__menu-link">about</a></li>
+						</ul>
+					</nav>
+				</div>
 				<img src="/src/img/promo/potter.jpg" alt="potter" class="header__img">
 				<div class="header__top">
 					<div class="burger"><span></span><span></span><span></span></div>
@@ -158,43 +171,45 @@
 							promotions</label>
 						<input class="newsletter__form-footeremail" type="email" name="email" id="newsletteremail"
 							placeholder="Enter your e-mail" required>
-						<label class="newsletter__form-terms" for="checkbox"><input class="newsletter__form-checkbox"
-								type="checkbox" id="newslettercheckbox" required>
-							I agree with the<a href="#">terms</a></label>
+						<label class="newsletter__form-terms"><input class="newsletter__form-checkbox" type="checkbox"
+								required>
+							I agree with the <a href="#">terms</a></label>
 						<button class="newsletter__form-button">submit</button>
 					</form>
 				</section>
-				<section class="links">
-					<div class="links__wrapper">
-						<div class="links__wrapper-item">
-							<h2 class="item__title">discover</h2>
-							<div class="item__links">
-								<div class="item__link"><a href="#">About Us</a></div>
-								<div class="item__link"><a href="#">Blog</a></div>
+				<div class="linksandsocial__wrapper">
+					<section class="links">
+						<div class="links__wrapper">
+							<div class="links__wrapper-item">
+								<h2 class="item__title">discover</h2>
+								<div class="item__links">
+									<div class="item__link"><a href="#">About Us</a></div>
+									<div class="item__link"><a href="#">Blog</a></div>
+								</div>
+							</div>
+							<div class="links__wrapper-item">
+								<h2 class="item__title">shopping</h2>
+								<div class="item__links">
+									<div class="item__link"><a href="#">Catalog</a></div>
+								</div>
+							</div>
+							<div class="links__wrapper-item">
+								<h2 class="item__title">information</h2>
+								<div class="item__links">
+									<div class="item__link"><a href="#">Terms and Conditions</a></div>
+								</div>
 							</div>
 						</div>
-						<div class="links__wrapper-item">
-							<h2 class="item__title">shopping</h2>
-							<div class="item__links">
-								<div class="item__link"><a href="#">Catalog</a></div>
-							</div>
+					</section>
+					<section class="socials">
+						<h2 class="socials__title">follow us</h2>
+						<div class="socials__wrapper">
+							<a href="https://www.facebook.com"><span class="icon-facebook"></span></a>
+							<a href="https://www.instagram.com"><span class="icon-instagram"></span></a>
+							<a href="https://www.pinterest.com"><span class="icon-pinterest-circled"></span></a>
 						</div>
-						<div class="links__wrapper-item">
-							<h2 class="item__title">information</h2>
-							<div class="item__links">
-								<div class="item__link"><a href="#">Terms and Conditions</a></div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="socials">
-					<h2 class="socials__title">follow us</h2>
-					<div class="socials__wrapper">
-						<span class="icon-facebook"></span>
-						<span class="icon-instagram"></span>
-						<span class="icon-pinterest-circled"></span>
-					</div>
-				</section>
+					</section>
+				</div>
 			</div>
 			<div class="copyright">© Copyright 2026, Ceramic soul</div>
 		</div>

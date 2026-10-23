@@ -35,7 +35,8 @@
                 font-size: 14px;
                 font-weight: 400;
                 line-height: normal;
-                min-width: 293px;
+                width: 100%;
+                max-width: 293px;
                 outline: none;
                 display: block;
                 margin-top: 40px;
@@ -85,6 +86,11 @@
                 cursor: pointer;
             }
 
+            &__form-checkbox:checked {
+                background: $Light;
+                box-shadow: inset 0 0 0 2px $Dark;
+            }
+
             &__form-button {
                 margin-top: 20px;
                 width: 90px;
@@ -98,6 +104,7 @@
                 font-weight: 400;
                 line-height: normal;
                 text-transform: uppercase;
+                cursor: pointer;
             }
 
             &__form-button:disabled {
@@ -143,6 +150,7 @@
         }
 
         .socials {
+
             &__title {
                 color: $Light;
                 font-family: Barlow;
@@ -170,6 +178,12 @@
         }
     }
 
+    .linksandsocial__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
     .copyright {
         color: $Light;
         width: max-content;
@@ -178,5 +192,30 @@
         font-size: 14px;
         font-weight: 400;
         line-height: normal;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer .linksandsocial__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+        .footer .linksandsocial__wrapper {
+            gap: 160px;
+        }
+}
+
+@media screen and (min-width: 1920px) {
+    .footer {
+        padding-top: 80px;
+        padding-bottom: 52px;
     }
 }
